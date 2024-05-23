@@ -3,6 +3,8 @@ import { Unit } from "@/components/unit";
 import { CardanoWallet } from "@meshsdk/react";
 import Image from "next/image";
 import React from "react";
+import { AiOutlineSignature } from "react-icons/ai";
+import { LiaFileSignatureSolid } from "react-icons/lia";
 import { LuBinary } from "react-icons/lu";
 
 function Projects() {
@@ -10,10 +12,24 @@ function Projects() {
     <>
       <Unit
         icon={React.createElement(LuBinary)}
-        title="Resolve Plutus Script Address "
+        title="Resolve Plutus Script Address"
         description="Resolve the address of the Plutus Smart Contract you have compiled."
         buttonText="Resolve Now"
-        path="unit/resolvePlutusScriptAddress "
+        path="unit/resolvePlutusScriptAddress"
+      />
+      <Unit
+        icon={React.createElement(LiaFileSignatureSolid)}
+        title="Sign Transaction Cbor"
+        description="Sign the transaction cbor you have built."
+        buttonText="Sign Now"
+        path="unit/signTx"
+      />
+      <Unit
+        icon={React.createElement(AiOutlineSignature)}
+        title="Sign MultiSig Transaction Cbor"
+        description="Sign a multisig transaction cbor."
+        buttonText="Sign Now"
+        path="unit/signMultiSigTx"
       />
     </>
   );
