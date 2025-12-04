@@ -31,6 +31,13 @@ function Projects() {
         buttonText="Sign Now"
         path="unit/signMultiSigTx"
       />
+      <Unit
+        icon={React.createElement(LuBinary)}
+        title="Sign Admin Transaction Cbor"
+        description="Sign an admin transaction cbor."
+        buttonText="Sign Now"
+        path="unit/signAdminTx"
+      />
     </>
   );
 }
